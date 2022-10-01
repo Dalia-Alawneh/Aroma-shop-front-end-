@@ -1,0 +1,300 @@
+@media (max-width:991px) {
+    .navbar .nav-icons ,.navbar .button-buy {
+        display: inline-block;
+        text-align: left;
+        width: unset;
+        margin-right: 20px;
+    }
+    .navbar{
+        position: relative;
+        text-align: left;
+    }
+    .row1 {
+        display: block;
+    }
+    .navbar .row1 .logo{
+        display: inline-block;
+        padding: 20px;
+    }
+    .navbar .container{
+        width: 100%;
+    }
+    .labelCheck{
+        display: inline-block;
+        position: relative;
+        left: 0;
+        top: -5px;
+        width: 72%;
+        text-align: RIGHT;
+    }
+    #inputCheck:checked + .row{
+        display: block;
+        
+    }
+    
+    .navbar .row1 .logo img{
+        width: 150px;
+    }
+    
+    .navbar .nav-list .nav-items{
+        display: block;
+    }
+    .navbar .row{
+        background-color: white;
+        position: absolute;
+        width:100%;
+        top:70px;
+        padding: 25px;
+        display: none;
+        transition: all 1s;
+    }
+    .navbar .nav-list .nav-items .nav-link{
+        line-height: 3;
+    }
+    .navbar .nav-list .nav-items .nav-link .dropdown{
+        position: relative;
+        top:0px;
+        left:20px;
+        width: 100%;
+        display: none;
+        visibility: hidden;
+        transition: all .5s;
+        line-height: 2.5;
+    }
+    .navbar .nav-list .nav-items .nav-link:nth-child(2):hover .dropdown{
+        top: 0;
+        display: unset;
+    }
+    .navbar .nav-list .nav-items .nav-link:nth-child(3):hover .dropdown{
+        top: 0;
+        display: unset;
+    }
+    .navbar .nav-list .nav-items .nav-link:nth-child(4):hover .dropdown{
+        top: 0;
+        display: unset;
+    }
+    .navbar .nav-list .nav-items .nav-link:nth-child(3) .dropdown-level2{
+        background-color: white;
+        list-style: none;
+        position: relative;
+        top: 0;
+        left: 200px;
+        width: 100%;
+        opacity: 0;
+        display: none;
+        transition: all .5s;
+    }
+    /* end media navbar */
+    /* ========================================== */
+    header{
+        height: auto;
+    }
+    .header-img{
+        height: auto;
+        padding-bottom: 0;
+
+    }
+    .header-container .header-desc .descreption{
+        padding: 50px 0;
+        margin-left: 50px;
+        margin-left: 20%;
+    }
+
+    /*end media header*/
+    /*=========================================== */
+    .products{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .products .product-item{
+        width: 49.5%;
+        position: relative;
+        margin-top: 3px;
+    }
+    .products .product-item:first-of-type{
+        margin-right: 7px;
+        
+    }
+    .container{
+        width: 90%;
+        position: relative;
+    }
+    .trending-products{
+        margin: 0;
+    }
+    .trending-products .container{
+        width: 90%;
+        margin-top: 20px;
+    }
+    /*end media products*/
+    /*=========================================== */
+    
+    .trending-products .row{
+        display: flex;
+        margin:0;
+        padding: 0;
+    }
+    .product{
+        width: 32%;
+    }
+
+    .shop-section{
+        width: 100%;
+    }
+    /* contact */
+    /*======================= */
+    .contact{
+        transform: translate(0,0);
+        width: 100%;
+    }
+    .footer .container{
+        margin-top: 0;
+    }
+    /*    login page    */
+    .login .row{
+        display: block;
+    }
+    .login .intro{
+        width: 100%;
+    }
+    .content {
+        padding: 0 50px;
+    }
+    .login .login-form{
+        width: 100%;
+        padding: 30px 50px;
+        margin: 20px 0;
+    }
+    form {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:951px) {
+    header{
+        height: auto;
+    }
+    .header-img{
+        height: auto;
+        padding-bottom: 0;
+    }
+    .header-container .header-desc .descreption{
+        padding: 50px 0;
+        margin-left: 50px;
+        margin-left: 20%;
+        font-size: smaller;
+    }
+    .products .product-item:first-of-type{
+        margin-top: 7px;
+    }
+    .contact input{
+        width: 40%;
+    }
+
+}
+@media (max-width:767px){
+    .img {
+        left: 50%;
+        top: 11%;
+        width: auto;
+        height: 60vh;
+    }
+    .header-container .header-desc .descreption .main-header {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .header-container .header-desc .descreption .details {
+        margin-bottom: 20px;
+        line-height: 1.5;
+        width: 100%;
+    }
+    .header-img {
+        width: 22%;
+    }
+    .contact input{
+        width: 80%;
+        margin-bottom: 15px;
+    }
+    .contact form{
+        display: unset;
+    }
+    /**footer * */
+    .footer .row{
+        display: unset;
+
+    }
+    .footer-item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer-item:last-of-type .row {
+        display: flex;
+    }
+    .footer .gallary {
+        width: 100%;
+    }
+    .footer .Quicklinks {
+        padding-left: 0;
+    }
+}
+@media (max-width:577px){
+    .products{
+        display: unset;
+       
+    }
+    .products .product-item{
+        width: 100%;
+        position: relative;
+        
+    }
+    .header-img {
+        width: 10%;
+    }
+    .img{
+        display: none;
+    }
+    .header-container .header-desc{
+        width: 100%;
+    }
+    .header-container .header-desc .descreption{
+        margin: 0;
+        width: 90%;
+    }
+    /* end of header */
+    /* start trending  */
+    .trending-products{
+        margin-top: 20px;
+    }
+    .trending-products .trend-desc, .main-title{
+        padding: 5px 15px;
+    }
+    .product{
+        width: 100%;
+    }
+    .shop-section .offer{
+        font-size: 30px;
+    }
+    .shop-section .offer-type{
+        font-size: 25px;
+    }
+    /*latest news*/
+    .latest-news {
+        display: unset;
+    }
+    .latest-news .new-item{
+        width: 100%;
+    }
+    .latest-news .new-item:not(img){
+        padding: 15px;
+    }
+}
+@media(max-width:1199px){
+
+}

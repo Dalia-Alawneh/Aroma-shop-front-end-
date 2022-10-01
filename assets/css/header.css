@@ -1,0 +1,117 @@
+
+.header{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.header h1{
+    font-size: 38px;
+    font-weight: bolder;
+    color: #222;
+}
+.header p{
+    color: #777;
+}
+.login .row{
+    width: 100%;
+    padding: 0;
+}
+.content{
+    height: 70vh;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    background-color: var(--main-color);
+}
+.content p{
+    width: 89%;
+    /* margin: 0 auto; */
+    line-height: 1.8;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.intro{
+    width: 50%;
+}
+.button a ,button:not(.navbar button){
+    background-color: var(--main-color);
+    padding: 13px 35px;
+    color: white;
+    border: 1px #eee solid;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 22px;
+    transition: all .5s;
+    text-transform: capitalize;
+}
+button:not(.navbar button):hover{
+    background-color: transparent;
+    color: #333;
+    border: 1px solid var(--main-color);
+}
+button.register{
+    border-radius: 0 !important;
+    background: #c5322d!important;
+    color: white;
+}
+button.register:hover{
+    opacity: 0.8;
+    border-color: #c5322d!important;
+    color: white;
+}
+.content button:hover, .button a:hover{
+    background: #c5322d!important;
+    color: #fff!important;
+    border-color: #c5322d!important;
+}
+.login-form{
+    height: 70vh;
+    width: 50%;
+    position: relative;
+    /* display: block; */
+    background: white;
+    /* transform: translate(0,50%); */
+    box-shadow: 0 10px 27px 3px rgb(221 221 221 / 45%);
+    text-align: center;
+    padding: 50px;
+    /* width: 75%; */
+    border-radius: 15px;
+    /* margin: auto; */
+}
+.login input{
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.login input:focus {
+    border: none;
+    border-bottom: 1px solid #ced4da;
+}
+form{
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    text-align: left;
+    justify-content: center;
+}
+form a{
+    color: #777;
+    display: block;
+    text-align: center;
+}
+form .remember input{
+    margin-right: 15px ;
+}
+form .remember label{
+    color: #777;
+}

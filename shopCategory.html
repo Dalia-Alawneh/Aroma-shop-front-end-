@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Shop</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--fontawesme-->
+    <link rel="stylesheet" href="vendor/css/all.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--custom css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- header css -->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <!--media css-->
+    <link rel="stylesheet" href="assets/css/media.css">
+
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="row1">
+                <div class="logo">
+                    <img class="logo-img" src="assets/imges/aromalogo.webp" alt="Aroma logo">
+                </div>
+                
+                    <label for="inputCheck" class="labelCheck"><i class="fas fa-bars"></i></label>
+                    <input type="checkbox" id="inputCheck">
+                <div class="row">
+                <div class="nav-list">
+                        <ul class="nav-items">
+                            <li class="nav-link"><a href="#">home</a></li>
+                            <li class="nav-link "><a class="shop" href="#">shop</a>
+                    
+                            <ul class="dropdown">
+                                <li class="dropdown-item"><a class="dropdown-link" href="#">shop category</a></li>
+                                <li class="dropdown-item"><a class="dropdown-link" href="#">product details</a></li>
+                                <li class="dropdown-item"><a class="dropdown-link" href="#">product checkout</a></li>
+                                <li class="dropdown-item"><a class="dropdown-link" href="#">confirmation</a></li>
+                                <li class="dropdown-item"><a class="dropdown-link" href="#">shopping cart</a></li>
+                            </ul>
+                            </li>
+                            <li class="nav-link"><a href="#">blog</a>
+                            <ul class="dropdown">
+                                <li class="dropdown-item"><a class="dropdown-link" href="#">blog</a></li>
+                                <li class="dropdown-item blog"><a class="dropdown-link" href="#">blog details <i class="fas fa-angle-right"></i></a>
+                                    <ul class="dropdown-level2">
+                                        <li class="dropdown-item"><a class="dropdown-link" href="#">blog1</a></li>
+                                        <li class="dropdown-item"><a class="dropdown-link" href="#">blog2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            </li>
+                            <li class="nav-link"><a href="#">pages</a>
+                                <ul class="dropdown">
+                                    <li class="dropdown-item"><a class="dropdown-link" href="#">login</a></li>
+                                    <li class="dropdown-item"><a class="dropdown-link" href="#">register</a></li>
+                                    <li class="dropdown-item"><a class="dropdown-link" href="#">tracking</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-link"><a href="#">contact</a></li>
+                        </ul>
+                </div>
+                <div class="nav-icons">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="button-buy">
+                    <button class="nav-button">buy now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <header class="header">
+        <h1>Shop Category</h1>
+        <p>Home - Shopping Cart</p>
+    </header>
+
+    <!-- products -->
+
+    <section class="products-categories mt-5">
+        <div class="container-fluid px-5">
+        <div class="row w-100 align-items-start">
+            <div class="col-md-3">
+                <div class="filters">
+                    <div class="filter">
+                        <h3 class="fs-5 m-0">Browse Categories</h3>
+                        <ul class="p-0 py-3">
+                            <li>
+                                <input id="Men" type="radio" name="cat" id="">
+                                <label for="Men">Men(3600)</label>
+                                
+                            </li>
+                            <li>
+                                <input id="Wemen" type="radio" name="cat" id="">
+                                <label for="Wemen">Wemen(3600)</label>
+                            </li>
+                            <li>
+                                <input id="Accessories" type="radio" name="cat" id="">
+                                <label for="Accessories">Accessories(3600)</label>
+                            </li>
+                            <li>
+                                <input id="Footwear" type="radio" name="cat" id="">
+                                <label for="Footwear">Footwear(3600)</label>
+                            </li>
+                            <li>
+                                <input id="Bay" type="radio" name="cat" id="">
+                                <label for="Bay">Bay item (3600)</label>
+                            </li>
+                            <li>
+                                <input id="Electronics" type="radio" name="cat" id="">
+                                <label for="Electronics">Electronics (3600)</label>
+                            </li>
+                            <li>
+                                <input id="Food" type="radio" name="cat" id="">
+                                <label for="Food">Food (3600)</label>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="filter">
+                        <h3 class="fs-5 m-0">Product filters </h3>
+                        <div class="filter-item">
+                            <h4 class="fs-6 ps-3 pt-3">Brands</h4>
+                            <ul class="p-0">
+                                <li>
+                                    <input id="Apple" type="radio" name="brand" id="">
+                                    <label for="Apple">Apple(29)</label>
+                                    
+                                </li>
+                                <li>
+                                    <input id="Asus" type="radio" name="brand" id="">
+                                    <label for="Asus">Asus(29)</label>
+                                </li>
+                                <li>
+                                    <input id="Gionee" type="radio" name="brand" id="">
+                                    <label for="Gionee">Gionee(19)</label>
+                                </li>
+                                <li>
+                                    <input id="Micromax" type="radio" name="brand" id="">
+                                    <label for="Micromax">Micromax(19)</label>
+                                </li>
+                                <li>
+                                    <input id="Samsung" type="radio" name="brand" id="">
+                                    <label for="Samsung">Samsung(19)</label>
+                                </li>
+    
+                            </ul>
+                            <h4 class="fs-6 ps-3 pt-3">Color</h4>
+                            <ul class="p-0 py-3">
+                                <li>
+                                    <input id="Black" type="radio" name="brand" id="">
+                                    <label for="Black">Black(29)</label>
+                                    
+                                </li>
+                                <li>
+                                    <input id="Black-Leather" type="radio" name="brand" id="">
+                                    <label for="Black-Leather">Black Leather(29)</label>
+                                </li>
+                                <li>
+                                    <input id="black-red" type="radio" name="brand" id="">
+                                    <label for="black-red">Black with red(19)</label>
+                                </li>
+                                <li>
+                                    <input id="Gold" type="radio" name="brand" id="">
+                                    <label for="Gold">Gold(19)</label>
+                                </li>
+                                <li>
+                                    <input id="Spacegrey" type="radio" name="brand" id="">
+                                    <label for="Spacegrey">Spacegrey(19)</label>
+                                </li>
+    
+                            </ul>
+                            <h4 class="fs-6 ps-3 pt-3">Brands</h4>
+
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="filter">
+                        <h3 class="fs-5 m-0">Browse Categories</h3>
+                        <ul class="p-0 py-3">
+                            <li>
+                                <input id="Men" type="radio" name="cat" id="">
+                                <label for="Men">Men(3600)</label>
+                                
+                            </li>
+                            <li>
+                                <input id="Wemen" type="radio" name="cat" id="">
+                                <label for="Wemen">Wemen(3600)</label>
+                            </li>
+                            <li>
+                                <input id="Accessories" type="radio" name="cat" id="">
+                                <label for="Accessories">Accessories(3600)</label>
+                            </li>
+                            <li>
+                                <input id="Footwear" type="radio" name="cat" id="">
+                                <label for="Footwear">Footwear(3600)</label>
+                            </li>
+                            <li>
+                                <input id="Bay" type="radio" name="cat" id="">
+                                <label for="Bay">Bay item (3600)</label>
+                            </li>
+                            <li>
+                                <input id="Electronics" type="radio" name="cat" id="">
+                                <label for="Electronics">Electronics (3600)</label>
+                            </li>
+                            <li>
+                                <input id="Food" type="radio" name="cat" id="">
+                                <label for="Food">Food (3600)</label>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="col-md-9">
+            <div class="prods">
+                <div class="filter-bar">
+                    <div class="row w-100">
+                        <div class="w-50">
+                            <select name="sort" class="me-3" id="">
+                                    <option class="p-2" value="">Default sorting</option>
+                                    <option value="">Default sorting</option>
+                                    <option value="">Default sorting</option>
+                            </select>
+                            <select name="sort" id="">
+                                <option selected hidden value="">
+                                        show 12
+                                    </option>
+                                    <option value="">show 12</option>
+                                    <option value="">show 12</option>
+                                    <option value="">show 12</option>
+                            </select>
+                        </div>
+                        <div class="search w-50 text-end">
+                            <div class="search-group">
+                                <input type="search" name="search" id="" placeholder="Search">
+                            <i class="fa-solid fa-magnifying-glass"></i>  
+                            </div> 
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="trending-items" >
+                    <div class="row w-100">
+                    <div class="product" >
+                        <div class="product-img">
+                        <img src="assets/imges/1.webp" alt=""/>
+                        <div class="product-icons">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                        
+                        <div class="product-desc">
+                            <p class="type">Beauty</p>
+                            <div class="prodect-title">Women Freshwash</div> 
+                            <p class="price">$150.00</p>
+                        </div>
+
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                        <img src="assets/imges/2.webp" alt=""/>
+                        <div class="product-icons">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                        
+                        <div class="product-desc">
+                            <p class="type">Decor</p>
+                            <div class="prodect-title">Room Flash Light</div> 
+                            <p class="price">$150.00</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                        <img src="assets/imges/3.webp" alt=""/>
+                        <div class="product-icons">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                        
+                        <div class="product-desc">
+                            <p class="type">Decor</p>
+                            <div class="prodect-title">Room Flash Light</div> 
+                            <p class="price">$150.00</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                        <img src="assets/imges/4.webp" alt=""/>
+                        <div class="product-icons">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                        
+                        <div class="product-desc">
+                            <p class="type">Accessories</p>
+                            <div class="prodect-title">Man Office Bag</div> 
+                            <p class="price">$150.00</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                        <img src="assets/imges/5.webp" alt=""/>
+                        <div class="product-icons">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                        
+                        <div class="product-desc">
+                            <p class="type">Kids Toy</p>
+                            <div class="prodect-title">Charging Car</div> 
+                            <p class="price">$150.00</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                        <img src="assets/imges/6.webp" alt=""/>
+                        <div class="product-icons">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                        
+                        <div class="product-desc">
+                            <p class="type">Accessories</p>
+                            <div class="prodect-title">Quartz Belt Watch</div> 
+                            <p class="price">$150.00</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                        <img src="assets/imges/7.webp" alt=""/>
+                        <div class="product-icons">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                        
+                        <div class="product-desc">
+                            <p class="type">Accessories</p>
+                            <div class="prodect-title">Blutooth Speaker</div> 
+                            <p class="price">$150.00</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                        <img src="assets/imges/8.webp" alt=""/>
+                        <div class="product-icons">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                        
+                        <div class="product-desc">
+                            <p class="type">Accessories</p>
+                            <div class="prodect-title">Iphone Charger</div> 
+                            <p class="price">$150.00</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        
+    </section>
+
+    <!-- end products -->
+
+
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-item Mission">
+                        <h2>Our Mission</h2>
+                        <p>So seed seed green that winged cattle in. Gathering thing made fly you're no divided deep moved us lan Gathering thing us land years living.</p>
+                        <p>So seed seed green that winged cattle in. Gathering thing made fly you're no divided deep moved</p>
+                    </div>
+                    <div class="footer-item Quicklinks">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                                <a href="#">Shop</a>
+                                <a href="#">Blog</a>
+                                <a href="#">Product</a>
+                                <a href="#">Brand</a>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-item">
+                        <h3>Gallery</h3>
+                        <div class="gallary">
+                            <img src="assets/imges/gal1.webp" alt="">
+                            <img src="assets/imges/gal2.webp" alt="">
+                            <img src="assets/imges/gal3.webp" alt="">
+                            <img src="assets/imges/gal4.webp" alt="">
+                            <img src="assets/imges/gal5.webp" alt="">
+                            <img src="assets/imges/gal6.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <h3>Contact Us</h3>
+                        <div class="row">
+                            <i class="fas fa-location-arrow"></i>
+                            <div class="contact-info">
+                                <h4>Head Office</h4>
+                                <p>123, Main Street, Your City</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-info">
+                                <h4>Phone Number</h4>
+                                <p>+123 456 7890</p>
+                                <p>+123 456 7890</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-info">
+                                <h4>Email</h4>
+                                <p>free@infoexample.com</p>
+                                <p>www.infoexample.com</p>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <div>
+            Copyright &copy; All rights reserved | This template 
+            is made with <i class="fa fa-heart"></i> by 
+            <a href="#">Dalia Alawneh</a>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
